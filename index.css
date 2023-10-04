@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+h1{ font-size: 3em;}
+h2{ font-size: 3em;}
+h3{ font-size: 1.5em;}
+p{ font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1px 10px ;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgba(61, 27, 90, 1) 
+}
+button:hover{
+    background-color: rgb(36, 16, 54);
+}
+
+.container{
+max-width: 600px;
+margin: auto;
+}
+
+header{
+    background-color: rgba(245, 455, 245, 1);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgba(61, 27, 90, 1);
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 0px;
+}
+header a{
+    padding: 6px 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:justify;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/imagencentro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#equipos{
+    background-color:blanchedalmond
+
+}
+#equipos .container{
+    text-align: center;
+    padding: 20px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: black;
+
+}
+#informacion{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+    
+}
+
+#informacion .container{
+    padding: 150px 0px;
+    
+
+}
+
+#informacion h2{
+    margin-top: 0;
+}
+
+#informacion p{
+    display: none;
+}
+
+#informacion .links{
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    
+    
+
+}
+
+.links:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/noticias.jpg");
+    color: black;
+    
+    
+    
+
+}
+
+.links:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/tabla.jpg");
+    
+}
+#reglas .container{
+    text-align: center;
+    padding: 1px 1px;
+
+}
+
+#reglas{
+    margin: 16px 0px;
+    background-color:antiquewhite
+}
+
+footer{
+    background-color: rgb(230,230,230);
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content:  space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+}
+
+
+#equipos .container{
+    display: flex;
+    justify-content: center;
+
+}
+
+#equipos .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#equipos .img-container{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(media/equipos.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 5000px;
+    width: 1000px;
+}
+#informacion .links{
+
+}
+
+#informacion .programas h3{
+    margin-top: 0;
+}
